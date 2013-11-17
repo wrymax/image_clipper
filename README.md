@@ -26,7 +26,36 @@ Or install it yourself as:
 
 ## Usage
 
+1. Directly processing image:
+    
+    image = ImageClipper::Image.new(image_path)
+		
+resize image:
 
+    # overwrite the original image:
+		image.resize('200x100')
+
+		# save to new file
+		image.resize('200x100', save_new_file_path)
+		
+		# use percentage
+		image.resize('35%')
+
+add watermark:
+
+		# this will add watermark to bottom right corner as default, and will overwrite the original image
+		image.watermarking(watermark_image_path)
+
+		# config the watermark position:
+		# posible selections: %W(top_left top_right bottom_left bottom_right center)
+		image.watermarking(watermark_image_path, position: 'center', save_to: your_watermarked_path)
+
+		# you can also customize the size of watermark picture:
+		# using /\d+x\d+/
+		image.watermarking(watermark_image_path, save_to: your_watermarked_path, resize_to: '177x20')
+
+		# using percentage, and set position
+		image.watermarking(watermark_image_path, save_to: your_watermarked_path, resize_to: '60%', position: '100,230')
 
 ## Contributing
 
