@@ -1,6 +1,8 @@
 # ImageClipper
 
-TODO: Write a gem description
+What ImageClipper does is just to make image processing easier! 
+
+Now you can forget about the complex command line of ImageMagick, and use deadly simple ruby method to complete image processing jobs.
 
 ## Installation
 
@@ -12,9 +14,9 @@ Or go to offcial website and download it:
 
     http://www.imagemagick.org/script/binary-releases.php
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile: (Sorry it's not been released to rubygems just now)
 
-    gem 'image_clipper'
+    gem 'image_clipper', git: 'https://github.com/wrymax/image_clipper'
 
 And then execute:
 
