@@ -14,9 +14,9 @@ Or go to offcial website and download it:
 
     http://www.imagemagick.org/script/binary-releases.php
 
-Add this line to your application's Gemfile: (Sorry it's not been released to rubygems just now)
+Add this line to your application's Gemfile:
 
-    gem 'image_clipper', git: 'https://github.com/wrymax/image_clipper'
+    gem 'image_clipper'
 
 And then execute:
 
