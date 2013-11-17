@@ -24,13 +24,13 @@ Or install it yourself as:
 
     $ gem install image_clipper
 
-## Usage
+## Directly processing image:
 
-1. Directly processing image:
-    
+Read image:
+
     image = ImageClipper::Image.new(image_path)
-		
-resize image:
+    
+Resize image:
 
     # overwrite the original image:
     image.resize('200x100')
@@ -41,7 +41,7 @@ resize image:
     # use percentage
     image.resize('35%')
 
-add watermark:
+Add watermark:
 
     # this will add watermark to bottom right corner as default, and will overwrite the original image
     image.watermarking(watermark_image_path)
@@ -56,6 +56,18 @@ add watermark:
 
     # using percentage, and set position
     image.watermarking(watermark_image_path, save_to: your_watermarked_path, resize_to: '60%', position: '100,230')
+
+## Work with paperclip and Rails
+
+Suppose a model user.rb has :avatar attachment based on paperclip, and I want to add watermark for the existing avatar.
+
+Add some code to user.rb: (just for example)
+
+    def watermark(watermark_path, options = {})
+      ImageClipper::Image.new(avatar.path(:original)).watermarking(watermark_path, options)
+      update_attribute(:avatar, avatar)
+    end
+
 
 ## Contributing
 
