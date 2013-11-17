@@ -4,6 +4,14 @@ TODO: Write a gem description
 
 ## Installation
 
+Firstly install the ImageMagick components:
+
+    brew install imagemagick
+
+Or go to offcial website and download it:
+
+    http://www.imagemagick.org/script/binary-releases.php
+
 Add this line to your application's Gemfile:
 
     gem 'image_clipper'
@@ -18,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
 
 ## Contributing
 
