@@ -6,7 +6,7 @@
 [Gem Version]: https://rubygems.org/gems/image_clipper
 [travis pull requests]: https://travis-ci.org/wrymax/image_clipper/pull_requests
 
-[GV img]: https://badge.fury.io/rb/image_clipper@2x.png
+[GV img]: https://badge.fury.io/rb/image_clipper.png
 
 What ImageClipper does is just to make image processing easier! 
 
