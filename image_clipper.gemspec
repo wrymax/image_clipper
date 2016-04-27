@@ -24,4 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "awesome_print"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "pry-byebug"
+  # Using ruby 1.9? use pry-debugger instdead
+  # spec.add_development_dependency "pry-debugger"
 end
