@@ -1,4 +1,12 @@
+[![Gem Version][GV img]][Gem Version]
+[![Build Status](https://travis-ci.org/wrymax/image_clipper.svg?branch=master)](https://travis-ci.org/wrymax/image_clipper)
+
 # ImageClipper
+
+[Gem Version]: https://rubygems.org/gems/image_clipper
+[travis pull requests]: https://travis-ci.org/wrymax/image_clipper/pull_requests
+
+[GV img]: https://badge.fury.io/rb/image_clipper@2x.png
 
 What ImageClipper does is just to make image processing easier! 
 
@@ -79,4 +87,3 @@ Add some code to user.rb: (just for example)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-[GV img]: https://badge.fury.io/rb/image_clipper@2x.png
